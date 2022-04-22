@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    letter-spacing: .2rem;    
+    color: hsl(209, 61%, 16%);
+}
+
+header .underline{ 
+    width: 90px;
+    border-bottom: 4px solid #c59d5f;
+    margin-bottom: 40px;
+}
+
+header nav{ 
+    width: 40%;
+    display: flex;
+    justify-content: space-around;  
+}
+
+header nav button{
+    background: transparent;
+    border: 2px solid #c59d5f;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #c59d5f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+} 
+
+header nav button:hover{
+    color: white;
+    background: #c59d5f;
+    transition: .5s;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .menu{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+}
+
+main .card{ 
+    display: flex;
+    margin-bottom: 60px;
+}
+
+main .card .img{
+    border: 3px solid #c59d5f;
+    border-radius: 5px;
+    height: 160px;
+    width: 450px;
+}
+
+main .card .img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+article{
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+article .title{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted hsl(209, 61%, 16%);
+}
+
+article .title h4{
+    color: hsl(209, 61%, 16%);
+    letter-spacing: .2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+article .title p{
+    color: #c59d5f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article p.desc{
+    width: 80%;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(204, 69%, 69%);
+    font-size: 1.2rem;
+}
